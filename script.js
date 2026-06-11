@@ -27,6 +27,11 @@ navLinks.forEach(link => {
     });
 });
 
+document.querySelector(".btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    showSection("contact");
+});
+
 homeLink.addEventListener("click", function (e) {
     e.preventDefault();
     showSection(null);
