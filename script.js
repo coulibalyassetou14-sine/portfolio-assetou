@@ -1,7 +1,9 @@
-const cards = document.querySelectorAll(".card");
-
-cards.forEach(card => {
-    card.addEventListener("mouseover", () => {
-        card.style.transition = "0.3s";
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+        }
     });
 });
