@@ -24,6 +24,11 @@ nav{
     color:white;
 }
 
+.logo a{
+    color:white;
+    text-decoration:none;
+}
+
 nav ul{
     display:flex;
     gap:20px;
@@ -92,6 +97,10 @@ section[id]{
 
 section[id].active{
     display:block;
+}
+
+.hero.hidden{
+    display:none;
 }
 
 nav a.active{
